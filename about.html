@@ -2,208 +2,166 @@
 layout: page
 ---
 
-
-<body>
-
-<div class="site-content">
-    <header class="site-header" data-bg-image="">
-        <div class="container">
-            <div class="header-bar">
-                <a href="index.html" class="branding">
-                    <img src="images/logo.png" alt="" class="logo">
-                    <div class="logo-type">
-                        <h1 class="site-title">Amirkabir University of Technology</h1>
-                        <small class="site-description">Computer & Information Technology Engineering Department</small>
-                    </div>
-                </a>
-
-                <nav class="main-navigation">
-                    <button class="menu-toggle"><i class="fa fa-bars"></i></button>
-                    <ul class="menu">
-                        <li class="home menu-item"><a href="index.html"><img src="images/home-icon.png" alt="Home"></a>
-                        </li>
-                        <li class="menu-item current-menu-item"><a href="about.html">About</a></li>
-                        <li class="menu-item"><a href="services.html">Services</a></li>
-                        <li class="menu-item"><a href="projects.html">Our projects</a></li>
-                        <li class="menu-item"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <div class="mobile-navigation"></div>
-            </div>
-        </div>
-    </header>
-
-    <div class="page-head" data-bg-image="images/page-head-1.jpg">
-        <div class="container">
-            <h2 class="page-title">About us</h2>
-            <small>IoT is cutting edge technology which intent to create connected things network. We want to provide
-                this technology for people of our country.
-            </small>
-        </div>
-    </div>
-
-    <main class="main-content">
-        <div class="fullwidth-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h2 class="section-title">Why choose us?</h2>
-                        <ol class="circle">
-                            <li>
-                                <h3>Dignissimos ducimus blanditiis</h3>
-                                <p>Molestias excepturi sint occaecati cupiditate provident similique sunt culpa. omnis
-                                    iste natus voluptatem.</p>
-                            </li>
-                            <li>
-                                <h3>Accusantium doloremque totam</h3>
-                                <p>Molestias excepturi sint occaecati cupiditate provident similique sunt culpa. omnis
-                                    iste natus voluptatem.</p>
-                            </li>
-                            <li>
-                                <h3>Cusamus dignissimos ducimus</h3>
-                                <p>Molestias excepturi sint occaecati cupiditate provident similique sunt culpa. omnis
-                                    iste natus voluptatem.</p>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="col-md-4">
-                        <h2 class="section-title">Usefull links</h2>
-                        <p>Nemo mollitia iste quis sed iure tempora dolore incidunt praesentium aspernatur! Praesentium
-                            impedit aperiam, commodi magnam accusamus nobis. Quia, velit sunt asperiores?</p>
-                        <ul class="arrow-list has-border">
-                            <li>Praesentium voluptatum deleniti atque dolores</li>
-                            <li>Corrupti quos et quas molestias excepturi</li>
-                            <li>Occaecati cupiditate non provident similique</li>
-                            <li>Nam libero tempore, cum soluta nobis eligendi</li>
-                            <li>Iditate non provident, similique sunt in culpa</li>
-                            <li>Officia deserunt mollitia animi distinctio laborum</li>
-                            <li>Dolorum fuga harum quidem rerum facilis</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h2 class="section-title">Testimonials</h2>
-                        <ul class="testimonial-list">
-                            <li>
-                                <blockquote>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis</p>
-                                    <cite>Anthony Rubbens</cite>
-                                </blockquote>
-                            </li>
-                            <li>
-                                <blockquote>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis</p>
-                                    <cite>Anthony Rubbens</cite>
-                                </blockquote>
-                            </li>
-                            <li>
-                                <blockquote>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis</p>
-                                    <cite>Anthony Rubbens</cite>
-                                </blockquote>
-                            </li>
-                        </ul>
-                    </div>
-                </div> <!-- .row -->
-            </div> <!-- .container -->
-        </div> <!-- .fullwidth-block -->
-
-        <div class="fullwidth-block" data-bg-color="#edf2f4">
-            <div class="container">
-                <h2 class="section-title">Our team</h2>
-                <div class="row">
-                    {% for member in site.data.members %}
-                    <div class="col-md-3">
-                        <div class="team">
-                            <img src="" alt="" class="team-image">
-                            <h3 class="team-name">Parham Alvani</h3>
-                            <p></p>
-                            <div class="social-links">
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-pinterest"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div> <!-- .row -->
-            </div> <!-- .container -->
-        </div>
-
-        <div class="fullwidth-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="checked-box">
-                            <h3>Numquam eius modi tempora incidunt ut labore</h3>
-                            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
-                                inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
-                                voluptatem voluptas.</p>
-                        </div>
-
-                        <div class="checked-box">
-                            <h3>Numquam eius modi tempora incidunt ut labore</h3>
-                            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
-                                inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
-                                voluptatem voluptas.</p>
-                        </div>
-
-                        <div class="checked-box">
-                            <h3>Numquam eius modi tempora incidunt ut labore</h3>
-                            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
-                                inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
-                                voluptatem voluptas.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="checked-box">
-                            <h3>Numquam eius modi tempora incidunt ut labore</h3>
-                            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
-                                inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
-                                voluptatem voluptas.</p>
-                        </div>
-
-                        <div class="checked-box">
-                            <h3>Numquam eius modi tempora incidunt ut labore</h3>
-                            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
-                                inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
-                                voluptatem voluptas.</p>
-                        </div>
-
-                        <div class="checked-box">
-                            <h3>Numquam eius modi tempora incidunt ut labore</h3>
-                            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
-                                inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
-                                voluptatem voluptas.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="fullwidth-block" data-bg-color="#edf2f4">
-            <div class="container">
-                <div class="subscribe-form">
-                    <h2>Join our newsletter</h2>
-                    <form action="#">
-                        <input type="text" placeholder="Enter your email">
-                        <input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-        </div>
-
-    </main> <!-- .main-content -->
+<div class="page-head" data-bg-image="images/page-head-1.jpg">
+  <div class="container">
+    <h2 class="page-title">About us</h2>
+    <small>IoT is cutting edge technology which intent to create connected things network. We want to provide
+      this technology for people of our country.
+    </small>
+  </div>
 </div>
 
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/app.js"></script>
+<main class="main-content">
+  <div class="fullwidth-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="section-title">Why choose us?</h2>
+          <ol class="circle">
+            <li>
+              <h3>Dignissimos ducimus blanditiis</h3>
+              <p>Molestias excepturi sint occaecati cupiditate provident similique sunt culpa. omnis
+                iste natus voluptatem.</p>
+            </li>
+            <li>
+              <h3>Accusantium doloremque totam</h3>
+              <p>Molestias excepturi sint occaecati cupiditate provident similique sunt culpa. omnis
+                iste natus voluptatem.</p>
+            </li>
+            <li>
+              <h3>Cusamus dignissimos ducimus</h3>
+              <p>Molestias excepturi sint occaecati cupiditate provident similique sunt culpa. omnis
+                iste natus voluptatem.</p>
+            </li>
+          </ol>
+        </div>
+        <div class="col-md-4">
+          <h2 class="section-title">Usefull links</h2>
+          <p>Nemo mollitia iste quis sed iure tempora dolore incidunt praesentium aspernatur! Praesentium
+            impedit aperiam, commodi magnam accusamus nobis. Quia, velit sunt asperiores?</p>
+          <ul class="arrow-list has-border">
+            <li>Praesentium voluptatum deleniti atque dolores</li>
+            <li>Corrupti quos et quas molestias excepturi</li>
+            <li>Occaecati cupiditate non provident similique</li>
+            <li>Nam libero tempore, cum soluta nobis eligendi</li>
+            <li>Iditate non provident, similique sunt in culpa</li>
+            <li>Officia deserunt mollitia animi distinctio laborum</li>
+            <li>Dolorum fuga harum quidem rerum facilis</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h2 class="section-title">Testimonials</h2>
+          <ul class="testimonial-list">
+            <li>
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis</p>
+                <cite>Anthony Rubbens</cite>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis</p>
+                <cite>Anthony Rubbens</cite>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis</p>
+                <cite>Anthony Rubbens</cite>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .fullwidth-block -->
 
-</body>
+  <div class="fullwidth-block" data-bg-color="#edf2f4">
+    <div class="container">
+      <h2 class="section-title">Our team</h2>
+      <div class="row">
+        {% for member in site.data.members %}
+          <div class="col-md-3">
+            <div class="team">
+              <img src="{{member.avatar}}" alt="" class="team-image">
+              <h3 class="team-name">{{member.name}}</h3>
+              <p></p>
+              <div class="social-links">
+                <a href="{{member.github}}"><i class="fa fa-github"></i></a>
+                <a href="{{member.linkedin}}"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div>
+
+  <div class="fullwidth-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="checked-box">
+            <h3>Numquam eius modi tempora incidunt ut labore</h3>
+            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
+              inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
+              voluptatem voluptas.</p>
+          </div>
+
+          <div class="checked-box">
+            <h3>Numquam eius modi tempora incidunt ut labore</h3>
+            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
+              inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
+              voluptatem voluptas.</p>
+          </div>
+
+          <div class="checked-box">
+            <h3>Numquam eius modi tempora incidunt ut labore</h3>
+            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
+              inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
+              voluptatem voluptas.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="checked-box">
+            <h3>Numquam eius modi tempora incidunt ut labore</h3>
+            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
+              inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
+              voluptatem voluptas.</p>
+          </div>
+
+          <div class="checked-box">
+            <h3>Numquam eius modi tempora incidunt ut labore</h3>
+            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
+              inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
+              voluptatem voluptas.</p>
+          </div>
+
+          <div class="checked-box">
+            <h3>Numquam eius modi tempora incidunt ut labore</h3>
+            <p>Voluptatem accusantium doloremque laudantium totam aperiam, eaque ipsa quae ab illo
+              inventore veritatis quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
+              voluptatem voluptas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fullwidth-block" data-bg-color="#edf2f4">
+    <div class="container">
+      <div class="subscribe-form">
+        <h2>Join our newsletter</h2>
+        <form action="#">
+          <input type="text" placeholder="Enter your email">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</main> <!-- .main-content -->
