@@ -1,0 +1,2 @@
+- title: "ISRC LoRa based platform"
+  description: "In this project we implement IoT platform for LoRa things with accounting and scalability up to 5000 nodes"
