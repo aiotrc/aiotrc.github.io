@@ -87,7 +87,7 @@ title: About
         {% for member in site.data.members %}
           <div class="col-md-3">
             <div class="team">
-              <a href="{{member.url}}"><img src="{{member.avatar}}" alt="" class="team-image"><a/>
+              <a href="{{member.url}}"><img src="{{member.avatar}}" alt="{{member.name}}" class="team-image"></a>
               <h3 class="team-name">{{member.name}}</h3>
               <p>{{member.bio}}</p>
               <div class="social-links">
