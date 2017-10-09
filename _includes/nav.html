@@ -18,12 +18,12 @@
           {% for page in site.pages %}
           {% if page.title %}
           {% if page.title == current_page.title %}
-          <li>
-            <a class="menu-item current-menu-item" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+          <li class="menu-item current-menu-item">
+            <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
           </li>
           {% else %}
-          <li>
-            <a class="menu-item" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+          <li class="menu-item">
+            <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
           </li>
           {% endif %}
           {% endif %}
