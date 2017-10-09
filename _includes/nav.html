@@ -14,10 +14,20 @@
         <ul class="menu">
           <li class="home menu-item"><a href="index.html"><img src="images/home-icon.png" alt="Home"></a>
           </li>
-          <li class="menu-item current-menu-item"><a href="about.html">About</a></li>
-          <li class="menu-item"><a href="services.html">Services</a></li>
-          <li class="menu-item"><a href="projects.html">Our projects</a></li>
-          <li class="menu-item"><a href="contact.html">Contact</a></li>
+          {% assign current_page = page %}
+          {% for page in site.pages %}
+          {% if page.title %}
+          {% if page.title == current_page.title %}
+          <li>
+            <a class="menu-item current-menu-item" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+          </li>
+          {% else %}
+          <li>
+            <a class="menu-item" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+          </li>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
         </ul>
       </nav>
 
