@@ -3,51 +3,51 @@ layout: page
 title: Projects
 ---
 
-			<div class="page-head" data-bg-image="images/page-head-3.jpg">
-				<div class="container">
-					<h2 class="page-title">Our Projects</h2>
-					<small>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit consequuntur magni </small>
-				</div>
-			</div>
+<div class="page-head" data-bg-image="images/page-head-3.jpg">
+  <div class="container">
+    <h2 class="page-title">Our Projects</h2>
+    <small>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit consequuntur magni </small>
+  </div>
+</div>
 
-			<main class="main-content">
-				<div class="fullwidth-block">
-					<div class="container">
-						<h2 class="section-title">Eiusmod tempor incididunt labore</h2>
-						<p>Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt culpa. omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p> 
+<main class="main-content">
+  <div class="fullwidth-block">
+    <div class="container">
+      <h2 class="section-title">Eiusmod tempor incididunt labore</h2>
+      <p>Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt culpa. omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p> 
 
-						<p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-					</div>
-				</div>
+      <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+    </div>
+  </div>
 
-				<div class="fullwidth-block">
-					<div class="container">
-						<div class="project-list">
-							{% for project in site.data.projects %}
-							<div class="project">
-								<div class="project-content">
-									<figure class="project-image"><img src="images/project-1.jpg" alt="Project"></figure>
-									<h3 class="project-title">{{project.title}}</h3>
-									<p>Dignissimos ducimus blanditiis deleniti atque corrupti quos dolores et quas molestias.</p>
-									<a href="project.html" class="button">Learn more</a>
-								</div>
-							</div>
-							{% endfor %}
-						</div>
-					</div>
-				</div>
-			
+  <div class="fullwidth-block">
+    <div class="container">
+      <div class="project-list">
+        {% for project in site.data.projects %}
+          <div class="project">
+            <div class="project-content">
+              <figure class="project-image"><img src="{{project.image}}" alt="Project"></figure>
+              <h3 class="project-title">{{project.title}}</h3>
+              <p>{{project.description}}</p>
+              <a href="project.html" class="button">Learn more</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 
-				<div class="fullwidth-block" data-bg-color="#edf2f4">
-					<div class="container">
-						<div class="subscribe-form">
-							<h2>Join our newsletter</h2>
-							<form action="#">
-								<input type="text" placeholder="Enter your email">
-								<input type="submit" value="Subscribe">
-							</form>
-						</div>
-					</div>
-				</div>
 
-			</main> <!-- .main-content -->
+  <div class="fullwidth-block" data-bg-color="#edf2f4">
+    <div class="container">
+      <div class="subscribe-form">
+        <h2>Join our newsletter</h2>
+        <form action="#">
+          <input type="text" placeholder="Enter your email">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</main> <!-- .main-content -->
