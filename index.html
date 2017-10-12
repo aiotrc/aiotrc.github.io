@@ -33,32 +33,21 @@ layout: default
     </div>
   </header>
 
+  {% assign image_files = site.static_files | where: "image", true %}
   <div class="hero">
     <ul class="slides">
-      <li data-bg-image="images/slider-1.jpg">
-        <div class="container">
-          <div class="slide-content">
-            <h2 class="slide-title">Amirkabir University of Technology IoT Laboratory</h2>
-            <a href="about.html" class="button">About us</a>
-          </div>
-        </div>
-      </li>
-      <li data-bg-image="images/slider-2.jpg">
-        <div class="container">
-          <div class="slide-content">
-            <h2 class="slide-title">Amirkabir University of Technology IoT Laboratory</h2>
-            <a href="about.html" class="button">About us</a>
-          </div>
-        </div>
-      </li>
-      <li data-bg-image="images/slider-3.jpg">
-        <div class="container">
-          <div class="slide-content">
-            <h2 class="slide-title">Amirkabir University of Technology IoT Laboratory</h2>
-            <a href="about.html" class="button">About us</a>
-          </div>
-        </div>
-      </li>
+      {% for image in image_files %}
+        {% if image.basename contains "slider" %}
+          <li data-bg-image="{{image.path | relative_path}}">
+            <div class="container">
+              <div class="slide-content">
+                <h2 class="slide-title">Amirkabir University of Technology IoT Laboratory</h2>
+                <a href="about.html" class="button">About us</a>
+              </div>
+            </div>
+          </li>
+        {% endif%}
+      {% endfor %}
     </ul>
   </div>
 
