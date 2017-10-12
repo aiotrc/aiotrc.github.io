@@ -1,0 +1,25 @@
+---
+Project_Name: Science Labs
+Author: Themezy
+Email: contact@themezy.com
+Url: http://www.themezy.com
+---
+
+/*=========================================== 
+ * Importing CSS Libraries
+ *===========================================*/
+@import "libs/settings";
+@import "libs/mixins";
+@import "libs/normalize";
+@import "libs/global";
+@import "libs/components";
+
+// importing bootstrap grid framework
+@import "libs/bootstrap-grid/settings";
+@import "libs/bootstrap-grid/mixins";
+@import "libs/bootstrap-grid/grid";
+
+// importing layout styles
+@import "layout/header";
+@import "layout/content";
+@import "layout/footer";
