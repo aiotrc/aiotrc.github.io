@@ -91,8 +91,12 @@ title: About
               <h3 class="team-name">{{member.name}}</h3>
               <p>{{member.bio}}</p>
               <div class="social-links">
+                {% if member.github %}
                 <a href="{{member.github}}"><i class="fa fa-github"></i></a>
+                {% endif %}
+                {% if member.linkedin %}
                 <a href="{{member.linkedin}}"><i class="fa fa-linkedin"></i></a>
+                {% endif %}
               </div>
             </div>
           </div>
