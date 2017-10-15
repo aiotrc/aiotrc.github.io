@@ -77,8 +77,8 @@ layout: default
           {% for new in site.data.news %}
           <div class="col-md-4">
             <div class="post">
-              <figure class="featured-image"><img src="images/{{new.image}}" alt="-"></figure>
-              <h2 class="entry-title"><a href="{{new.linl}}">{{new.title}}</a></h2>
+              <figure class="featured-image"><img src="images/{{new.image}}" alt="{{new.title}} image"></figure>
+              <h2 class="entry-title"><a href="{{new.link}}">{{new.title}}</a></h2>
               <small class="date">{{new.date}}</small>
               <p>{{new.desc}}</p>
             </div>
