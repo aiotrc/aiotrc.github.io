@@ -37,6 +37,7 @@
 			@include em(16)
 		}
 		.site-description{
+			margin : 0;
 			@include em(12)
 		}
 	}

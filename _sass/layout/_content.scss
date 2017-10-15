@@ -9,6 +9,7 @@
 }
 
 .feature{
+	min-height: 350px;
 	margin-bottom: 30px;
 	text-align: center;
 	border: 1px solid #e1e8ec;
@@ -19,6 +20,8 @@
 	.feature-title{
 		@include em(30);
 		font-weight: 300;
+		min-height: 100px;
+		max-height: 100px;
 	}
 	p{
 		@include em(16);
