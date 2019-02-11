@@ -2,7 +2,6 @@
  * Header Styles
  */
 
-
 .site-header{
 	position: relative;
 	z-index: 9;
@@ -30,7 +29,10 @@
 		display: inline-block;
 		vertical-align: middle;
 	}
-	.logo{margin-right: 10px}
+	.logo{
+                margin-right: 10px;
+                height: 50px;
+        }
 	.logo-type{
 		.site-title{
 			margin: 0 0 5px;
@@ -137,12 +139,12 @@
 	.slides{
 		list-style: none;
 		@include clearfix;
-		
+
 		li{
 			width: 100%;
 			margin-right: -100%;
 			float: left;
-			min-height: 720px;
+			min-height: 100vh;
 			padding-bottom: 100px;
 			background-size: cover;
 		}
@@ -171,7 +173,6 @@
 		z-index: 8;
 		text-align: center;
 
-		
 		li{
 			display: inline-block;
 			margin: 30px 5px;
@@ -207,8 +208,6 @@
 				}
 			}
 		}
-
-		
 	}
 }
 
