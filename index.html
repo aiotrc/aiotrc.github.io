@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div class="site-content" xmlns="http://www.w3.org/1999/html">
-  <header class="site-header collapsed-nav" data-bg-image="">
+<div class="site-content">
+  <header class="site-header collapsed-nav">
     <div class="container">
-      <div class="header-bar">
+      <div class="header-bar" data-bg-color="rgba(255, 255, 255, 0.8)">
         <a href="index.html" class="branding">
           <img src="images/logo.png" alt="Amirkabir University of Technology IoT Laboratory" class="logo">
           <div class="logo-type">
@@ -38,11 +38,11 @@ layout: default
     <ul class="slides">
       {% for image in image_files %}
         {% if image.basename contains "slider" %}
-          <li data-bg-image="{{image.path | relative_path}}">
+          <li data-bg-image="{{ image.path | relative_path }}">
             <div class="container">
               <div class="slide-content">
                 <h2 class="slide-title">Amirkabir University of Technology <br/> IoT Research Center</h2>
-                <a href="about.html" class="button">About us</a>
+                <a href="about.html" class="button" data-bg-color="rgba(255, 255, 255, 0.8)">About us</a>
               </div>
             </div>
           </li>
@@ -50,7 +50,7 @@ layout: default
       {% endfor %}
     </ul>
   </div>
-  `
+
   <main class="main-content">
     <div class="fullwidth-block">
       <div class="container">
@@ -59,10 +59,10 @@ layout: default
           {% for group in site.data.groups %}
             <div class="col-md-3 col-sm-6">
               <div class="feature">
-                <img src="images/{{group.icon | relative_path}}" alt="-" class="feature-image">
-                <h2 class="feature-title">{{group.name}}</h2>
-                <p>{{group.desc}}</p>
-                <a href="{{ group.link | relative_url }}" class="button">Learn more</a>
+                <img src="{{ group.icon }}" alt="{{ group.name }}" class="feature-image" width="120px">
+                <h2 class="feature-title">{{ group.name }}</h2>
+                <p>{{ group.desc }}</p>
+                <a href="{{ group.link }}" class="button">Learn more</a>
               </div>
             </div>
           {% endfor %}
@@ -109,25 +109,5 @@ layout: default
         </div>
       </div>
     </div>
-
-    <div class="fullwidth-block cta" data-bg-image="images/cta-bg.jpg">
-      <div class="container">
-        <h2 class="cta-title">Neque porro quisquam</h2>
-        <p>Modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil moles</p>
-        <!--<a href="#" class="button">See details</a>-->
-      </div>
-    </div>
-
-    <div class="fullwidth-block" data-bg-color="#edf2f4">
-      <div class="container">
-        <div class="subscribe-form">
-          <h2>Join our newsletter</h2>
-          <form action="#">
-            <input type="text" placeholder="Enter your email">
-            <input type="submit" value="Subscribe">
-          </form>
-        </div>
-      </div>
-    </div>
-
   </main> <!-- .main-content -->
+</div>
