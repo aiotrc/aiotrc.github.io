@@ -1,3 +1,3 @@
-# Platform Working Group Website [![Build Status](https://travis-ci.org/PlatformWG/PlatformWG.github.io.svg?branch=master)](https://travis-ci.org/PlatformWG/PlatformWG.github.io)
+# IoT Research Center Website
 ## Introduction
-Homepage of platform working group of IoT platform.
+This is our homepage created by jekyll framework.
